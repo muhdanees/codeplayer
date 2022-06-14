@@ -1,926 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-
-<body>
-  <header class="header">
-    <a href="/" class="logo">
-      <svg viewBox="0 0 38 46" xmlns="http://www.w3.org/2000/svg">
-        <path d="M19 2L1 13V33L19 44L37 33V13L19 2Z" stroke-width="2" />
-        <path
-          d="M18.9141 17.041L14.207 30H12.2832L17.7031 15.7812H18.9434L18.9141 17.041ZM22.8594 30L18.1426 17.041L18.1133 15.7812H19.3535L24.793 30H22.8594ZM22.6152 24.7363V26.2793H14.627V24.7363H22.6152Z"
-          fill="#64e1ff" />
-      </svg>
-    </a>
-    <nav class="nav">
-      <ul>
-        <li><a href="/#about">About</a></li>
-        <li><a href="/#jobs">Experience</a></li>
-        <li><a href="/#projects">Work</a></li>
-        <li><a href="/#contact">Contact</a></li>
-      </ul>
-      <a class="resume-button" href="/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
-    </nav>
-    <button aria-label="Menu" class="ham-button">
-      <div class="ham-box">
-        <div class="ham-box-inner"></div>
-      </div>
-    </button>
-  </header>
-
-  <div orientation="left" class="left-side">
-    <ul class="">
-      <li>
-        <a href="https://github.com/muhdanees" aria-label="GitHub" target="_blank" rel="noreferrer">
-          <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
-            <title>GitHub</title>
-            <path
-              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-            </path>
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.instagram.com/muhdanees/" aria-label="Instagram" target="_blank" rel="noreferrer">
-          <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
-            <title>Instagram</title>
-            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a href="https://twitter.com/aneesoffice" aria-label="Twitter" target="_blank" rel="noreferrer">
-          <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter">
-            <title>Twitter</title>
-            <path
-              d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
-            </path>
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/mohd-anees/" aria-label="Linkedin" target="_blank" rel="noreferrer">
-          <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
-            <title>LinkedIn</title>
-            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-            <rect x="2" y="9" width="4" height="12"></rect>
-            <circle cx="4" cy="4" r="2"></circle>
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a href="https://codepen.io/muhdanees/" aria-label="Codepen" target="_blank" rel="noreferrer">
-          <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-codepen">
-            <title>CodePen</title>
-            <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon>
-            <line x1="12" y1="22" x2="12" y2="15.5"></line>
-            <polyline points="22 8.5 12 15.5 2 8.5"></polyline>
-            <polyline points="2 15.5 12 8.5 22 15.5"></polyline>
-            <line x1="12" y1="2" x2="12" y2="8.5"></line>
-          </svg>
-        </a>
-      </li>
-    </ul>
-  </div>
-
-  <div orientation="right" class="right-side">
-    <div class="email">
-      <a href="mailto:anees.office@gmail.com">anees.office@gmail.com</a>
-    </div>
-  </div>
-
-  <main>
-    <section class="home">
-      <div class="intro">
-        <h1>Hi, my name is</h1>
-        <h2 class="big-heading">Mohd Anees.</h2>
-        <h3 class="big-heading">Front-end Developer from New Delhi India.</h3>
-        <p>
-          I'm a front-end developer specializing in a mobile-first web
-          application (also occasionally designing) exceptional digital
-          experiences.
-        </p>
-        <a class="email-link" href="#" target="_blank" rel="noreferrer">Check out my work!</a>
-      </div>
-    </section>
-
-    <section class="about">
-      <h2 class="numbered-heading">About Me</h2>
-      <div class="inner">
-        <div class="about-text">
-          <p>
-            Hello! My name is Anees and I always enjoy when creating things
-            live on the internet. My interest in Frontend development started
-            back in 2009. when I decided to try editing custom flash
-            animations and photo editing — now turns out to Development fully
-            custom things taught me a lot about HTML & CSS!
-          </p>
-
-          <p>
-            honestly, I am saying today, i have been working in many
-            companies, startups, and media houses. my main focus is to learn
-            those things that are better for the future goal in the digital
-            experience which is very good. for a variety of clients.
-          </p>
-
-          <p>
-            I also recently learned ReactJS for building user interfaces which
-            is highly appreciated.
-          </p>
-
-          <p>
-            These are the main things that have been working for a long time:
-          </p>
-
-          <ul class="skills-list">
-            <li>ReactJS</li>
-            <li>JavaScript (ES6+)</li>
-            <li>jQuery</li>
-            <li>Bootstrap</li>
-            <li>RWD</li>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>Photoshop</li>
-          </ul>
+  <body>
+    <header class="header">
+      <a href="/" class="logo">
+        <svg viewbox="0 0 38 46" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 2L1 13V33L19 44L37 33V13L19 2Z" stroke-width="2"/>
+          <path d="M18.9141 17.041L14.207 30H12.2832L17.7031 15.7812H18.9434L18.9141 17.041ZM22.8594 30L18.1426 17.041L18.1133 15.7812H19.3535L24.793 30H22.8594ZM22.6152 24.7363V26.2793H14.627V24.7363H22.6152Z" fill="#64e1ff"/>
+        </svg>
+      </a>
+      <nav class="nav">
+        <ul>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#jobs">Experience</a>
+          </li>
+          <li>
+            <a href="#projects">Work</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+        <a class="resume-button" href="/Mohd_Anees-Senior_User_Interface_Developer.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+      </nav>
+      <button aria-label="Menu" class="ham-button">
+        <div class="ham-box">
+          <div class="ham-box-inner"></div>
         </div>
-        <div class="about-me">
-          <div class="wrapper">
-            <img src="./images/me.jpg" alt="Headshot" />
-          </div>
-        </div>
-      </div>
-    </section>
+      </button>
+    </header>
 
-    <section class="worked">
-      <h2 class="numbered-heading">I've Worked here</h2>
-      <div class="inner-work">
-        <div class="tab-list">
-          <button class="active"><span>LegalSubmit India</span></button>
-          <button><span>Hindustan Times Media</span></button>
-          <button><span>CloudChowk Solutions</span></button>
-          <button><span>India Petro Group</span></button>
-          <button><span>Oscillate Infotech</span></button>
-          <button><span>Makbog Solutions</span></button>
-          <button><span>Modulus Systems</span></button>
-        </div>
-        <div class="tab-content">
-          <div class="tabs open">
-            <h3>
-              <span>Senior UX Engineer - ||</span>
-              <span class="company">
-                @
-                <a href="https://legalsubmitsoft.com/" class="inline-link" rel="noopener noreferrer"
-                  target="_blank">LegalSubmit India Pvt. Ltd.</a></span>
-            </h3>
-            <p class="range">21 April 2021 - 13 December 2021</p>
-            <div class="work-list">
-              <ul>
-                <li>
-                  PDF Editor and
-                  <a href="www.PDFsimpli.com">PDFsimpli.com</a> was our main
-                  project which was from USA
-                  <a href="www.worksimpli.io">www.worksimpli.io</a>.
-                </li>
-                <li>
-                  Build a front-end infrastructure with better designs,
-                  efficiency and accessibility.
-                </li>
-                <li>
-                  Ensure the design is adaptable for cross platforms like
-                  macOS and Windows, cross browsers like Safari, Firefox, and
-                  cross-device like PC, mobiles, etc.
-                </li>
-                <li>
-                  Be innovative with updated technologies JSON, React and
-                  APIs.
-                </li>
-                <li>
-                  Collaborate and communicate with the back-end developers to
-                  keep them aligned with your vision and ideas.
-                </li>
-                <li>Test runs and looks out for errors.</li>
-                <li>
-                  Debug, and refactor existing applications and software
-                  modules as required Quickly respond to critical support
-                  issues.
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="tabs">
-            <h3>
-              <span>Senior Front-end Developer</span>
-              <span class="company">
-                @
-                <a href="https://www.hindustantimes.com/" class="inline-link" rel="noopener noreferrer"
-                  target="_blank">Hindustan Time Media</a></span>
-            </h3>
-            <p class="range">7 September 2016 - 20 April 2021</p>
-            <div class="work-list">
-              <ul>
-                <li>
-                  Fundamental knowledge of application development using
-                  technology like HTML5, CSS3, SCSS/LESS, Flexbox, Grid,
-                  JavaScript, jQuery, Responsive etc.
-                </li>
-                <li>
-                  A desire to work in a fast-paced and challenging environment
-                </li>
-                <li>
-                  Write clean, modular web-based SAAS applications in an agile
-                  and ever-changing environment
-                </li>
-                <li>
-                  Debug, and refactor existing applications and software
-                  modules as required Quickly respond to critical support
-                  issues.
-                </li>
-                <li>
-                  Work with Software Architect to understand coding standards
-                  and architectural practices
-                </li>
-                <li>
-                  Assist Other Sr. Engineers with other tasks as assigned.
-                </li>
-                <li>
-                  Develop highly interactive web applications utilizing
-                  JavaScript, HTML5, CSS3(SCSS), and external web services
-                  ensuring high performance on Mobile and Desktop.
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="tabs">
-            <h3>
-              <span>UI Developer</span>
-              <span class="company">
-                @
-                <a href="http://www.cloudchowk.com/" class="inline-link" rel="noopener noreferrer"
-                  target="_blank">CloudChowk Solutions Private Limited</a></span>
-            </h3>
-            <p class="range">6 April 2015 - 2 September 2016</p>
-            <div class="work-list">
-              <ul>
-                <li>
-                  Debug, and refactor existing applications and software
-                  modules as required
-                </li>
-                <li>Quickly respond to critical support issues.</li>
-                <li>
-                  Write clean, modular web-based SaaS applications in an agile
-                  and ever-changing environment
-                </li>
-                <li>
-                  Assist Other Sr. Engineers with other tasks as assigned for
-                  Responsive layout.
-                </li>
-                <li>Experience utilizing REST and microservices</li>
-                <li>
-                  Develop highly interactive web applications utilizing
-                  JavaScript, HTML5, CSS3(SCSS), and integrating with .Net and
-                  Other Framework with developers.
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="tabs">
-            <h3>
-              <span>Web Designer</span>
-              <span class="company">
-                @
-                <a href="http://www.indianpetro.com/" class="inline-link" rel="noopener noreferrer"
-                  target="_blank">Indian Petro Group - (A division of 360 Analytics &
-                  Advisory Pvt. Ltd)</a></span>
-            </h3>
-            <p class="range">14 June 2013 - 3rd April 2015</p>
-            <div class="work-list">
-              <ul>
-                <li>
-                  Debug, and refactor existing applications and software
-                  modules as required
-                </li>
-                <li>
-                  Write clean, modular web-based SaaS applications in an agile
-                  and ever-changing environment
-                </li>
-                <li>
-                  Assist Other Developer and Design with other tasks as
-                  assigned
-                </li>
-                <li>
-                  Develop highly interactive web applications utilizing
-                  JavaScript, HTML5, CSS3(SCSS), integrating with Liferay
-                  Framework(Java).
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="tabs">
-            <h3>
-              <span>HTML Developer</span>
-              <span class="company">
-                @
-                <a href="https://oscillateinfo.com/" class="inline-link" rel="noopener noreferrer"
-                  target="_blank">Oscillate Infotech Pvt. Ltd.</a></span>
-            </h3>
-            <p class="range">11 October 2012 - 10 June 2013</p>
-            <div class="work-list">
-              <ul>
-                <li>
-                  Debug, and refactor existing applications and software
-                  modules as required
-                </li>
-                <li>
-                  Write clean, modular web-based SaaS applications in an agile
-                  and ever-changing environment
-                </li>
-                <li>
-                  Assist Other Developer and Design with other tasks as
-                  assigned
-                </li>
-                <li>
-                  Develop highly interactive web applications utilizing HTML5,
-                  CSS3, WordPress designs, Graphic Designs, Banner, and Mailer
-                  Designs.
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="tabs">
-            <h3>
-              <span>Web Designer</span>
-              <span class="company">
-                @
-                <a href="http://www.makbog.com/" class="inline-link" rel="noopener noreferrer" target="_blank">Makbog
-                  Solutions Pvt. Ltd.</a></span>
-            </h3>
-            <p class="range">23rd May 2011 - 10 October 2012</p>
-            <div class="work-list">
-              <ul>
-                <li>
-                  Write clean, TableLess HTML Conversion and Template Design
-                  in Photoshop.
-                </li>
-                <li>
-                  Assist Other Developer and Design with other tasks as
-                  assigned
-                </li>
-                <li>
-                  Develop highly interactive web applications utilizing
-                  jQuery, HTML, CSS, WordPress designs, Flash work, Graphic
-                  Designs, Banner, and Mailer Designs.
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="tabs">
-            <h3>
-              <span>Web Designer</span>
-              <span class="company">
-                @
-                <a href="http://www.modulussystems.com/" class="inline-link" rel="noopener noreferrer"
-                  target="_blank">Modulus Systems</a></span>
-            </h3>
-            <p class="range">9 March 2009 - 25 APril 2011</p>
-            <div class="work-list">
-              <ul>
-                <li>
-                  Worked in a Pure table without DIVs as I joined that time.
-                </li>
-                <li>
-                  Sometimes I Assisted Other Designers with other tasks as
-                  assigned
-                </li>
-                <li>
-                  Develop highly interactive web applications utilizing HTML,
-                  CSS, Flash Animations, Graphic Designs, Banner, and Mailer
-                  Designs.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="projects">
-      <h2 class="numbered-heading">Best Project worked on</h2>
-      <ul class="project-list">
-        <li class="project">
-          <div class="project-content">
-            <p class="project-overline">ReactJS Project</p>
-            <h3 class="project-title">
-              <a href="https://www.hminterior.in/" rel="noopener noreferrer" target="_blank">HM Enterpricess</a>
-            </h3>
-            <div class="project-description">
-              <p>
-                I made it on my own - luxurious projects ( Home appartments ,
-                offices, Malls, villas ). HM Enterprises is the best interior
-                and Exterior design firm.
-              </p>
-            </div>
-            <ul class="project-tech-list">
-              <li>ReactJS</li>
-              <li>JavaScript</li>
-              <li>VS Code</li>
-              <li>Figma</li>
-              <li>Mouduler-CSS</li>
-            </ul>
-            <div class="project-links">
-              <a href="https://www.instagram.com/hmenterprises810/" aria-label="GitHub Link" rel="noopener noreferrer"
-                target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
-                  <title>Instagram</title>
-                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                </svg>
-              </a>
-              <a href="https://www.hminterior.in/" aria-label="External Link" class="external" rel="noopener noreferrer"
-                target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
-                  <title>External Link</title>
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                  <polyline points="15 3 21 3 21 9"></polyline>
-                  <line x1="10" y1="14" x2="21" y2="3"></line>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="project-image">
-            <a href="https://www.hminterior.in/" rel="noopener noreferrer" target="_blank">
-              <div class="img-section">
-                <img src="./images/hminterior.jpg" alt="" title="" />
-              </div>
-            </a>
-          </div>
-        </li>
-        <li class="project">
-          <div class="project-content">
-            <p class="project-overline">My Peortfolio</p>
-            <h3 class="project-title">
-              <a href="https://www.codeplayer.in/portfolio" rel="noopener noreferrer" target="_blank">CodePlayer.in</a>
-            </h3>
-            <div class="project-description">
-              <p>
-                A front-end developer with having good ability for solving
-                Quickly things along with 10+ years of great industry
-                experience.
-              </p>
-
-              <p>
-                I have worked diffirent type of companies Advertise Company,
-                Media House, digital news, software developement and
-                subscription developemt. every company has diffirent mind set
-                because of different critaria but have learned according to
-                the companies.
-              </p>
-            </div>
-            <ul class="project-tech-list">
-              <li>ReactJS</li>
-              <li>Styled Components</li>
-              <li>Module CSS</li>
-              <li>Javascript</li>
-              <li>Bootstrap Grid</li>
-            </ul>
-            <div class="project-links">
-              <a href="https://github.com/muhdanees" aria-label="GitHub Link" rel="noopener noreferrer" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
-                  <title>GitHub</title>
-                  <path
-                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                  </path>
-                </svg>
-              </a>
-              <a href="https://www.codeplayer.in/portfolio" aria-label="External Link" class="external"
-                rel="noopener noreferrer" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
-                  <title>External Link</title>
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                  <polyline points="15 3 21 3 21 9"></polyline>
-                  <line x1="10" y1="14" x2="21" y2="3"></line>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="project-image">
-            <a href="https://www.codeplayer.in/portfolio" rel="noopener noreferrer" target="_blank">
-              <div class="img-section">
-                <img src="./images/codeplayer.jpg" alt="" title="" />
-              </div>
-            </a>
-          </div>
-        </li>
-        <li class="project">
-          <div class="project-content">
-            <p class="project-overline">Digital News Project</p>
-            <h3 class="project-title">
-              <a href="https://www.hindustantimes.com/" rel="noopener noreferrer" target="_blank">Hindustan Times
-                Media</a>
-            </h3>
-            <div class="project-description">
-              <p>
-                Develop highly interactive web applications utilizing
-                JavaScript, HTML5, CSS3 (SCSS / functions / mixins / variables), and
-                external web services ensuring high performance on Mobile and
-                Desktop.
-              </p>
-              <p>
-                As you know its a media company so time to time things
-                happenes like elections and third party ads as well on our
-                website alos lots of widgets and AMP Story pages too.
-              </p>
-            </div>
-            <ul class="project-tech-list">
-              <li>Javascript</li>
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>VS Code</li>
-              <li>Bootstrap</li>
-              <li>RWD</li>
-            </ul>
-            <div class="project-links">
-              <a href="https://www.codeplayer.in/portfolio" aria-label="Course Link" class="cta"
-                rel="noopener noreferrer" target="_blank">Learn More About Me</a>
-            </div>
-          </div>
-          <div class="project-image">
-            <a href="https://www.hindustantimes.com/" rel="noopener noreferrer" target="_blank">
-              <div class="img-section">
-                <img src="./images/hindustantimes.jpg" alt="" title="" />
-              </div>
-            </a>
-          </div>
-        </li>
-      </ul>
-    </section>
-
-    <section class="otherProject">
-      <h2 class="other-head">Other skills you may required</h2>
-      <a class="inline-link archive-link" href="https://www.codeplayer.in/portfolio">view the archive</a>
-
-      <ul class="projects-grid">
+    <div orientation="left" class="left-side">
+      <ul class="">
         <li>
-          <div class="project-inner">
-            <header>
-              <div class="project-top">
-                <div class="folder">
-                  <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-                    class="feather feather-folder">
-                    <title>Folder</title>
-                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
-                  </svg>
-                </div>
-                <div class="project-links">
-                  <a href="https://www.desimartini.com/" aria-label="External Link" class="external" target="_blank"
-                    rel="noopener noreferrer">
-                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                      class="feather feather-external-link">
-                      <title>External Link</title>
-                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                      <polyline points="15 3 21 3 21 9"></polyline>
-                      <line x1="10" y1="14" x2="21" y2="3"></line>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <h3 class="project-title">
-                <a href="https://medium.com/stories-from-upstatement/integrating-algolia-search-with-wordpress-multisite-e2dea3ed449c"
-                  target="_blank" rel="noopener noreferrer">Desimartini</a>
-              </h3>
-              <div class="project-description">
-                <p>
-                  This is the entertinement reveiw and ratting promos before
-                  release.
-                </p>
-                <p>i worked on it wehen i join HTMedia in 2016.</p>
-              </div>
-            </header>
-            <footer>
-              <ul class="project-tech-list">
-                <li>HTML5</li>
-                <li>SCSS</li>
-                <li>jQuery</li>
-                <li>Tailwind CSS</li>
-              </ul>
-            </footer>
-          </div>
-        </li>
-        <li>
-          <div class="project-inner">
-            <header>
-              <div class="project-top">
-                <div class="folder">
-                  <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-                    class="feather feather-folder">
-                    <title>Folder</title>
-                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
-                  </svg>
-                </div>
-                <div class="project-links">
-                  <a href="https://github.com/bchiang7/time-to-have-more-fun" aria-label="GitHub Link" target="_blank"
-                    rel="noopener noreferrer">
-                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                      class="feather feather-github">
-                      <title>GitHub</title>
-                      <path
-                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                      </path>
-                    </svg>
-                  </a>
-                  <a href="https://time-to-have-more-fun.now.sh/" aria-label="External Link" class="external"
-                    target="_blank" rel="noopener noreferrer">
-                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                      class="feather feather-external-link">
-                      <title>External Link</title>
-                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                      <polyline points="15 3 21 3 21 9"></polyline>
-                      <line x1="10" y1="14" x2="21" y2="3"></line>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <h3 class="project-title">
-                <a href="#" target="_blank" rel="noopener noreferrer">Figma Design</a>
-              </h3>
-              <div class="project-description">
-                <p>
-                  I can create prototype in Figma according to requirement.
-                </p>
-              </div>
-            </header>
-            <footer>
-              <ul class="project-tech-list">
-                <li>Figma</li>
-                <li>Design Prototype</li>
-              </ul>
-            </footer>
-          </div>
-        </li>
-        <li>
-          <div class="project-inner">
-            <header>
-              <div class="project-top">
-                <div class="folder">
-                  <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-                    class="feather feather-folder">
-                    <title>Folder</title>
-                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
-                  </svg>
-                </div>
-                <div class="project-links">
-                  <a href="https://medium.com/stories-from-upstatement/building-a-headless-mobile-app-cms-from-scratch-bab2d17744d9"
-                    aria-label="External Link" class="external" target="_blank" rel="noopener noreferrer">
-                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                      class="feather feather-external-link">
-                      <title>External Link</title>
-                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                      <polyline points="15 3 21 3 21 9"></polyline>
-                      <line x1="10" y1="14" x2="21" y2="3"></line>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <h3 class="project-title">
-                <a href="https://medium.com/stories-from-upstatement/building-a-headless-mobile-app-cms-from-scratch-bab2d17744d9"
-                  target="_blank" rel="noopener noreferrer">Branding for Products</a>
-              </h3>
-              <div class="project-description">
-                <p>
-                  Brnding for products like visiting card and broture logo
-                  hording.
-                </p>
-              </div>
-            </header>
-            <footer>
-              <ul class="project-tech-list">
-                <li>Hording</li>
-                <li>Visiting Card</li>
-                <li>Logos</li>
-                <li>Ads</li>
-              </ul>
-            </footer>
-          </div>
-        </li>
-        <li>
-          <div class="project-inner">
-            <header>
-              <div class="project-top">
-                <div class="folder">
-                  <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-                    class="feather feather-folder">
-                    <title>Folder</title>
-                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
-                  </svg>
-                </div>
-                <div class="project-links">
-                  <a href="https://github.com/bchiang7/octoprofile" aria-label="GitHub Link" target="_blank"
-                    rel="noopener noreferrer">
-                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                      class="feather feather-github">
-                      <title>GitHub</title>
-                      <path
-                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                      </path>
-                    </svg>
-                  </a>
-                  <a href="https://octoprofile.now.sh" aria-label="External Link" class="external" target="_blank"
-                    rel="noopener noreferrer">
-                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                      class="feather feather-external-link">
-                      <title>External Link</title>
-                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                      <polyline points="15 3 21 3 21 9"></polyline>
-                      <line x1="10" y1="14" x2="21" y2="3"></line>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <h3 class="project-title">
-                <a href="https://octoprofile.now.sh" target="_blank" rel="noopener noreferrer">Photoshot</a>
-              </h3>
-              <div class="project-description">
-                <p>
-                  I have experience in photoediting for photoshot and anytype
-                  of editing in photoshop
-                </p>
-              </div>
-            </header>
-            <footer>
-              <ul class="project-tech-list">
-                <li>Marriage photoshoot</li>
-                <li>Ads photoshoot</li>
-                <li>Modeling Photoshoot</li>
-              </ul>
-            </footer>
-          </div>
-        </li>
-        <li>
-          <div class="project-inner">
-            <header>
-              <div class="project-top">
-                <div class="folder">
-                  <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-                    class="feather feather-folder">
-                    <title>Folder</title>
-                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
-                  </svg>
-                </div>
-                <div class="project-links">
-                  <a href="https://github.com/bchiang7/google-keep-vue-firebase" aria-label="GitHub Link"
-                    target="_blank" rel="noopener noreferrer">
-                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                      class="feather feather-github">
-                      <title>GitHub</title>
-                      <path
-                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                      </path>
-                    </svg>
-                  </a>
-                  <a href="https://keep-vue.netlify.com/" aria-label="External Link" class="external" target="_blank"
-                    rel="noopener noreferrer">
-                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                      class="feather feather-external-link">
-                      <title>External Link</title>
-                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                      <polyline points="15 3 21 3 21 9"></polyline>
-                      <line x1="10" y1="14" x2="21" y2="3"></line>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <h3 class="project-title">
-                <a href="https://keep-vue.netlify.com/" target="_blank" rel="noopener noreferrer">AMP Story</a>
-              </h3>
-              <div class="project-description">
-                <p>A simple Google Keep clone built with Vue and Firebase.</p>
-              </div>
-            </header>
-            <footer>
-              <ul class="project-tech-list">
-                <li>AMP</li>
-                <li>google</li>
-              </ul>
-            </footer>
-          </div>
-        </li>
-        <li>
-          <div class="project-inner">
-            <header>
-              <div class="project-top">
-                <div class="folder">
-                  <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-                    class="feather feather-folder">
-                    <title>Folder</title>
-                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
-                  </svg>
-                </div>
-                <div class="project-links">
-                  <a href="https://tools.applemusic.com/en-us" aria-label="External Link" class="external"
-                    target="_blank" rel="noopener noreferrer">
-                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                      class="feather feather-external-link">
-                      <title>External Link</title>
-                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                      <polyline points="15 3 21 3 21 9"></polyline>
-                      <line x1="10" y1="14" x2="21" y2="3"></line>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <h3 class="project-title">
-                <a href="https://tools.applemusic.com/en-us" target="_blank" rel="noopener noreferrer">Graphics in
-                  Illustrator</a>
-              </h3>
-              <div class="project-description">
-                <p>
-                  I know how to create graphics in illustrator for our company
-                  products.
-                </p>
-              </div>
-            </header>
-            <footer>
-              <ul class="project-tech-list">
-                <li>Profile Design</li>
-                <li>XD</li>
-                <li>Illustrator</li>
-              </ul>
-            </footer>
-          </div>
-        </li>
-      </ul>
-
-      <button class="more-button">Show More</button>
-    </section>
-
-    <section class="contact-me">
-      <h2 class="numbered-heading overline">What's Next?</h2>
-      <h2 class="title">Get In Touch</h2>
-      <p>
-        As if I'm not any new Job opportunities, But my inbox is always free.
-        Whether you any query then you just want to say hi, I'll try my best
-        to get back to you!
-      </p>
-      <!-- <a class="email-link" href="mailto:anees.office@gmail.com" rel="noopener noreferrer" target="_blank">Want Say
-        Hello</a> -->
-
-        <button id="getNtouch" class="email-link">Want Say
-          Hello</button>
-
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="footer-icons">
-      <ul>
-        <li>
-          <a href="https://github.com/muhdanees" aria-label="GitHub" rel="noopener noreferrer" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+          <a href="https://github.com/muhdanees" aria-label="GitHub" target="_blank" rel="noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
               <title>GitHub</title>
-              <path
-                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-              </path>
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
             </svg>
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com/muhdanees/" aria-label="Instagram" rel="noopener noreferrer"
-            target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
+          <a href="https://www.instagram.com/muhdanees/" aria-label="Instagram" target="_blank" rel="noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
               <title>Instagram</title>
               <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
               <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
@@ -929,21 +61,16 @@
           </a>
         </li>
         <li>
-          <a href="https://twitter.com/aneesoffice" aria-label="Twitter" rel="noopener noreferrer" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter">
+          <a href="https://twitter.com/aneesoffice" aria-label="Twitter" target="_blank" rel="noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter">
               <title>Twitter</title>
-              <path
-                d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
-              </path>
+              <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
             </svg>
           </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/mohd-anees/" aria-label="Linkedin" rel="noopener noreferrer"
-            target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
+          <a href="https://www.linkedin.com/in/mohd-anees/" aria-label="Linkedin" target="_blank" rel="noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
               <title>LinkedIn</title>
               <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
               <rect x="2" y="9" width="4" height="12"></rect>
@@ -952,9 +79,8 @@
           </a>
         </li>
         <li>
-          <a href="https://codepen.io/muhdanees" aria-label="Codepen" rel="noopener noreferrer" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-codepen">
+          <a href="https://codepen.io/muhdanees/" aria-label="Codepen" target="_blank" rel="noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-codepen">
               <title>CodePen</title>
               <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon>
               <line x1="12" y1="22" x2="12" y2="15.5"></line>
@@ -967,88 +93,890 @@
       </ul>
     </div>
 
-    <div class="footer-text">
-      <a href="https://www.codeplayer.in/" target="_blank">
-        <div>Copyright © 2022 Designed &amp; Developed by Mohd Anees</div>
-      </a>
+    <div orientation="right" class="right-side">
+      <div class="email">
+        <a href="mailto:anees.office@gmail.com">anees.office@gmail.com</a>
+      </div>
     </div>
-  </footer>
 
-  <div id="popup" class="modal">
-    <button class="cancel"><span></span></button>
-    <h3>What do you wanna say!!</h3>
-    <p>Write in the below form:</p>
-    <div class="row">
-      <input type="text" placeholder="type your name" />
-    </div>
-    <div class="row">
-      <input type="text" placeholder="type your mobile number" />
-    </div>
-    <div class="row">
-      <textarea rows="8">type your query</textarea>
-    </div>
-    <div class="row">
-      <button id="submitQuery" class="">Submit Query</button>
-    </div>
-  </div>
+    <main>
+      <section class="home">
+        <div class="intro">
+          <h1>Hi, my name is</h1>
+          <h2 class="big-heading">Mohd Anees.</h2>
+          <h3 class="big-heading">Front-end Developer from New Delhi India.</h3>
+          <p>
+            I'm a front-end developer specializing in a mobile-first web
+                        application (also occasionally designing) exceptional digital
+                        experiences.
+          </p>
+          <a class="email-link" href="#" target="_blank" rel="noreferrer">Check out my work!</a>
+        </div>
+      </section>
 
-  <script>
-    var hamButton = document.querySelector(".ham-button");
-    var bodyHome = document.querySelector("body");
-    var nav = document.querySelector("nav.nav");
+      <section class="about" id="about">
+        <h2 class="numbered-heading">About Me</h2>
+        <div class="inner">
+          <div class="about-text">
+            <p>
+              Hello! My name is Anees and I always enjoy when creating things
+                            live on the internet. My interest in Frontend development started
+                            back in 2009. when I decided to try editing custom flash
+                            animations and photo editing — now turns out to Development fully
+                            custom things taught me a lot about HTML & CSS!
+            </p>
 
-    hamButton.addEventListener("click", function () {
-      // nav.classList.toggle("show");
-      nav.classList.toggle("isShow");
-      bodyHome.classList.toggle("over-flow");
-      this.classList.toggle("close");
-    });
+            <p>
+              honestly, I am saying today, i have been working in many
+                            companies, startups, and media houses. my main focus is to learn
+                            those things that are better for the future goal in the digital
+                            experience which is very good. for a variety of clients.
+            </p>
 
-    function removeClasses(els, cls) {
-      els.forEach(function (el) {
-        el.classList.remove(cls);
+            <p>
+              I also recently learned ReactJS for building user interfaces which
+                            is highly appreciated.
+            </p>
+
+            <p>
+              These are the main things that have been working for a long time:
+            </p>
+
+            <ul class="skills-list">
+              <li>ReactJS</li>
+              <li>JavaScript (ES6+)</li>
+              <li>jQuery</li>
+              <li>Bootstrap</li>
+              <li>RWD</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Photoshop</li>
+            </ul>
+          </div>
+          <div class="about-me">
+            <div class="wrapper">
+              <img src="./images/me.jpg" alt="Headshot"/>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="worked" id="jobs">
+        <h2 class="numbered-heading">I've Worked here</h2>
+        <div class="inner-work">
+          <div class="tab-list">
+            <button class="active">
+              <span>HTDS (Hindustan Times Media Limited)</span>
+            </button>
+            <button>
+              <span>LegalSubmit India</span>
+            </button>
+            <button>
+              <span>Hindustan Times Media</span>
+            </button>
+            <button>
+              <span>CloudChowk Solutions</span>
+            </button>
+            <button>
+              <span>India Petro Group</span>
+            </button>
+            <button>
+              <span>Oscillate Infotech</span>
+            </button>
+            <button>
+              <span>Makbog Solutions</span>
+            </button>
+            <button>
+              <span>Modulus Systems</span>
+            </button>
+          </div>
+          <div class="tab-content">
+            <div class="tabs open">
+              <h3>
+                <span>Senior User-Interface Developer</span>
+                <span class="company">
+                  @
+                  <a href="https://hindustantimes.com/" class="inline-link" rel="noopener noreferrer" target="_blank">Hindustan Times Media Ltd.</a>
+                </span>
+              </h3>
+              <p class="range">21 April 2021 - 13 December 2021</p>
+              <div class="work-list">
+                <ul>
+                  <li>Widgets Developments for the Digital News Industry (Digital Media).<a href="www.hindustantimes.com">www.HindustanTimes.com</a>.</li>
+                  <li>Responsive news section according to the news.</li>
+                  <li>Elections widget development and crickets widgets.</li>
+                  <li>Ads campaign widgets development.</li>
+                  <li>Widgets developement along with core webbital for better performance.</li>
+                  <li>Cross plateform widgets for all major browsers which is required for SEO friendly.</li>
+                  <li>Mobile Friendly widgets in a user experience developement.</li>
+                  <li>widgets development like covid 19 and many more.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tabs">
+              <h3>
+                <span>Senior UX Engineer - ||</span>
+                <span class="company">
+                  @
+                  <a href="https://legalsubmitsoft.com/" class="inline-link" rel="noopener noreferrer" target="_blank">LegalSubmit India Pvt. Ltd.</a>
+                </span>
+              </h3>
+              <p class="range">21 April 2021 - 13 December 2021</p>
+              <div class="work-list">
+                <ul>
+                  <li>
+                    PDF Editor and
+                    <a href="www.PDFsimpli.com">PDFsimpli.com</a>
+                    was our main
+                                        project which was from USA
+                    <a href="www.worksimpli.io">www.worksimpli.io</a>.
+                  </li>
+                  <li>
+                    Build a front-end infrastructure with better designs,
+                                        efficiency and accessibility.
+                  </li>
+                  <li>
+                    Ensure the design is adaptable for cross platforms like
+                                        macOS and Windows, cross browsers like Safari, Firefox, and
+                                        cross-device like PC, mobiles, etc.
+                  </li>
+                  <li>
+                    Be innovative with updated technologies JSON, React and
+                                        APIs.
+                  </li>
+                  <li>
+                    Collaborate and communicate with the back-end developers to
+                                        keep them aligned with your vision and ideas.
+                  </li>
+                  <li>Test runs and looks out for errors.</li>
+                  <li>
+                    Debug, and refactor existing applications and software
+                                        modules as required Quickly respond to critical support
+                                        issues.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="tabs">
+              <h3>
+                <span>Senior Front-end Developer</span>
+                <span class="company">
+                  @
+                  <a href="https://www.hindustantimes.com/" class="inline-link" rel="noopener noreferrer" target="_blank">Hindustan Time Media</a>
+                </span>
+              </h3>
+              <p class="range">7 September 2016 - 20 April 2021</p>
+              <div class="work-list">
+                <ul>
+                  <li>
+                    Fundamental knowledge of application development using
+                                        technology like HTML5, CSS3, SCSS/LESS, Flexbox, Grid,
+                                        JavaScript, jQuery, Responsive etc.
+                  </li>
+                  <li>
+                    A desire to work in a fast-paced and challenging environment
+                  </li>
+                  <li>
+                    Write clean, modular web-based SAAS applications in an agile
+                                        and ever-changing environment
+                  </li>
+                  <li>
+                    Debug, and refactor existing applications and software
+                                        modules as required Quickly respond to critical support
+                                        issues.
+                  </li>
+                  <li>
+                    Work with Software Architect to understand coding standards
+                                        and architectural practices
+                  </li>
+                  <li>
+                    Assist Other Sr. Engineers with other tasks as assigned.
+                  </li>
+                  <li>
+                    Develop highly interactive web applications utilizing
+                                        JavaScript, HTML5, CSS3(SCSS), and external web services
+                                        ensuring high performance on Mobile and Desktop.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="tabs">
+              <h3>
+                <span>UI Developer</span>
+                <span class="company">
+                  @
+                  <a href="http://www.cloudchowk.com/" class="inline-link" rel="noopener noreferrer" target="_blank">CloudChowk Solutions Private Limited</a>
+                </span>
+              </h3>
+              <p class="range">6 April 2015 - 2 September 2016</p>
+              <div class="work-list">
+                <ul>
+                  <li>
+                    Debug, and refactor existing applications and software
+                                        modules as required
+                  </li>
+                  <li>Quickly respond to critical support issues.</li>
+                  <li>
+                    Write clean, modular web-based SaaS applications in an agile
+                                        and ever-changing environment
+                  </li>
+                  <li>
+                    Assist Other Sr. Engineers with other tasks as assigned for
+                                        Responsive layout.
+                  </li>
+                  <li>Experience utilizing REST and microservices</li>
+                  <li>
+                    Develop highly interactive web applications utilizing
+                                        JavaScript, HTML5, CSS3(SCSS), and integrating with .Net and
+                                        Other Framework with developers.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="tabs">
+              <h3>
+                <span>Web Designer</span>
+                <span class="company">
+                  @
+                  <a href="http://www.indianpetro.com/" class="inline-link" rel="noopener noreferrer" target="_blank">Indian Petro Group - (A division of 360 Analytics &
+                                        Advisory Pvt. Ltd)</a>
+                </span>
+              </h3>
+              <p class="range">14 June 2013 - 3rd April 2015</p>
+              <div class="work-list">
+                <ul>
+                  <li>
+                    Debug, and refactor existing applications and software
+                                        modules as required
+                  </li>
+                  <li>
+                    Write clean, modular web-based SaaS applications in an agile
+                                        and ever-changing environment
+                  </li>
+                  <li>
+                    Assist Other Developer and Design with other tasks as
+                                        assigned
+                  </li>
+                  <li>
+                    Develop highly interactive web applications utilizing
+                                        JavaScript, HTML5, CSS3(SCSS), integrating with Liferay
+                                        Framework(Java).
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="tabs">
+              <h3>
+                <span>HTML Developer</span>
+                <span class="company">
+                  @
+                  <a href="https://oscillateinfo.com/" class="inline-link" rel="noopener noreferrer" target="_blank">Oscillate Infotech Pvt. Ltd.</a>
+                </span>
+              </h3>
+              <p class="range">11 October 2012 - 10 June 2013</p>
+              <div class="work-list">
+                <ul>
+                  <li>
+                    Debug, and refactor existing applications and software
+                                        modules as required
+                  </li>
+                  <li>
+                    Write clean, modular web-based SaaS applications in an agile
+                                        and ever-changing environment
+                  </li>
+                  <li>
+                    Assist Other Developer and Design with other tasks as
+                                        assigned
+                  </li>
+                  <li>
+                    Develop highly interactive web applications utilizing HTML5,
+                                        CSS3, WordPress designs, Graphic Designs, Banner, and Mailer
+                                        Designs.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="tabs">
+              <h3>
+                <span>Web Designer</span>
+                <span class="company">
+                  @
+                  <a href="http://www.makbog.com/" class="inline-link" rel="noopener noreferrer" target="_blank">Makbog Solutions Pvt. Ltd.</a>
+                </span>
+              </h3>
+              <p class="range">23rd May 2011 - 10 October 2012</p>
+              <div class="work-list">
+                <ul>
+                  <li>
+                    Write clean, TableLess HTML Conversion and Template Design
+                                        in Photoshop.
+                  </li>
+                  <li>
+                    Assist Other Developer and Design with other tasks as
+                                        assigned
+                  </li>
+                  <li>
+                    Develop highly interactive web applications utilizing
+                                        jQuery, HTML, CSS, WordPress designs, Flash work, Graphic
+                                        Designs, Banner, and Mailer Designs.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="tabs">
+              <h3>
+                <span>Web Designer</span>
+                <span class="company">
+                  @
+                  <a href="http://www.modulussystems.com/" class="inline-link" rel="noopener noreferrer" target="_blank">Modulus Systems</a>
+                </span>
+              </h3>
+              <p class="range">9 March 2009 - 25 APril 2011</p>
+              <div class="work-list">
+                <ul>
+                  <li>
+                    Worked in a Pure table without DIVs as I joined that time.
+                  </li>
+                  <li>
+                    Sometimes I Assisted Other Designers with other tasks as
+                                        assigned
+                  </li>
+                  <li>
+                    Develop highly interactive web applications utilizing HTML,
+                                        CSS, Flash Animations, Graphic Designs, Banner, and Mailer
+                                        Designs.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects" id="projects">
+        <h2 class="numbered-heading">Best Project worked on</h2>
+        <ul class="project-list">
+          <li class="project">
+            <div class="project-content">
+              <p class="project-overline">ReactJS Project</p>
+              <h3 class="project-title">
+                <a href="https://www.hminterior.in/" rel="noopener noreferrer" target="_blank">HM Enterpricess</a>
+              </h3>
+              <div class="project-description">
+                <p>
+                  I made it on my own - luxurious projects ( Home appartments ,
+                                    offices, Malls, villas ). HM Enterprises is the best interior
+                                    and Exterior design firm.
+                </p>
+              </div>
+              <ul class="project-tech-list">
+                <li>ReactJS</li>
+                <li>JavaScript</li>
+                <li>VS Code</li>
+                <li>Figma</li>
+                <li>Mouduler-CSS</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://www.instagram.com/hmenterprises810/" aria-label="GitHub Link" rel="noopener noreferrer" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" role="img" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
+                    <title>Instagram</title>
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                </a>
+                <a href="https://www.hminterior.in/" aria-label="External Link" class="external" rel="noopener noreferrer" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" role="img" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+                    <title>External Link</title>
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-image">
+              <a href="https://www.hminterior.in/" rel="noopener noreferrer" target="_blank">
+                <div class="img-section">
+                  <img src="./images/hminterior.jpg" alt="" title=""/>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project-content">
+              <p class="project-overline">My Peortfolio</p>
+              <h3 class="project-title">
+                <a href="https://www.codeplayer.in/portfolio" rel="noopener noreferrer" target="_blank">CodePlayer.in</a>
+              </h3>
+              <div class="project-description">
+                <p>
+                  A front-end developer with having good ability for solving
+                                    Quickly things along with 10+ years of great industry
+                                    experience.
+                </p>
+
+                <p>
+                  I have worked diffirent type of companies Advertise Company,
+                                    Media House, digital news, software developement and
+                                    subscription developemt. every company has diffirent mind set
+                                    because of different critaria but have learned according to
+                                    the companies.
+                </p>
+              </div>
+              <ul class="project-tech-list">
+                <li>ReactJS</li>
+                <li>Styled Components</li>
+                <li>Module CSS</li>
+                <li>Javascript</li>
+                <li>Bootstrap Grid</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/muhdanees" aria-label="GitHub Link" rel="noopener noreferrer" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" role="img" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+                    <title>GitHub</title>
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </a>
+                <a href="https://www.codeplayer.in/portfolio" aria-label="External Link" class="external" rel="noopener noreferrer" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" role="img" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+                    <title>External Link</title>
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-image">
+              <a href="https://www.codeplayer.in/portfolio" rel="noopener noreferrer" target="_blank">
+                <div class="img-section">
+                  <img src="./images/codeplayer.jpg" alt="" title=""/>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project-content">
+              <p class="project-overline">Digital News Project</p>
+              <h3 class="project-title">
+                <a href="https://www.hindustantimes.com/" rel="noopener noreferrer" target="_blank">Hindustan Times Media</a>
+              </h3>
+              <div class="project-description">
+                <p>
+                  Develop highly interactive web applications utilizing
+                                    JavaScript, HTML5, CSS3 (SCSS / functions / mixins /
+                                    variables), and external web services ensuring high
+                                    performance on Mobile and Desktop.
+                </p>
+                <p>
+                  As you know its a media company so time to time things
+                                    happenes like elections and third party ads as well on our
+                                    website alos lots of widgets and AMP Story pages too.
+                </p>
+              </div>
+              <ul class="project-tech-list">
+                <li>Javascript</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>VS Code</li>
+                <li>Bootstrap</li>
+                <li>RWD</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://www.codeplayer.in/portfolio" aria-label="Course Link" class="cta" rel="noopener noreferrer" target="_blank">Learn More About Me</a>
+              </div>
+            </div>
+            <div class="project-image">
+              <a href="https://www.hindustantimes.com/" rel="noopener noreferrer" target="_blank">
+                <div class="img-section">
+                  <img src="./images/hindustantimes.jpg" alt="" title=""/>
+                </div>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="otherProject">
+        <h2 class="other-head">Other skills you may required</h2>
+        <a class="inline-link archive-link" href="https://www.codeplayer.in/portfolio">view the archive</a>
+
+        <ul class="projects-grid">
+          <li>
+            <div class="project-inner">
+              <header>
+                <div class="project-top">
+                  <div class="folder">
+                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder">
+                      <title>Folder</title>
+                      <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                  </div>
+                  <div class="project-links">
+                    <a href="https://www.desimartini.com/" aria-label="External Link" class="external" target="_blank" rel="noopener noreferrer">
+                      <svg xmlns="http://www.w3.org/2000/svg" role="img" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+                        <title>External Link</title>
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <h3 class="project-title">
+                  <a href="https://medium.com/stories-from-upstatement/integrating-algolia-search-with-wordpress-multisite-e2dea3ed449c" target="_blank" rel="noopener noreferrer">Desimartini</a>
+                </h3>
+                <div class="project-description">
+                  <p>
+                    This is the entertinement reveiw and ratting promos before
+                                        release.
+                  </p>
+                  <p>i worked on it wehen i join HTMedia in 2016.</p>
+                </div>
+              </header>
+              <footer>
+                <ul class="project-tech-list">
+                  <li>HTML5</li>
+                  <li>SCSS</li>
+                  <li>jQuery</li>
+                  <li>Tailwind CSS</li>
+                </ul>
+              </footer>
+            </div>
+          </li>
+          <li>
+            <div class="project-inner">
+              <header>
+                <div class="project-top">
+                  <div class="folder">
+                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder">
+                      <title>Folder</title>
+                      <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                  </div>
+                  <div class="project-links">
+                    <a href="https://github.com/bchiang7/time-to-have-more-fun" aria-label="GitHub Link" target="_blank" rel="noopener noreferrer">
+                      <svg xmlns="http://www.w3.org/2000/svg" role="img" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+                        <title>GitHub</title>
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                      </svg>
+                    </a>
+                    <a href="https://time-to-have-more-fun.now.sh/" aria-label="External Link" class="external" target="_blank" rel="noopener noreferrer">
+                      <svg xmlns="http://www.w3.org/2000/svg" role="img" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+                        <title>External Link</title>
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <h3 class="project-title">
+                  <a href="#" target="_blank" rel="noopener noreferrer">Figma/XD Design</a>
+                </h3>
+                <div class="project-description">
+                  <p>
+                    I can create prototype in Figma/XD according to requirement.
+                  </p>
+                </div>
+              </header>
+              <footer>
+                <ul class="project-tech-list">
+                  <li>Figma</li>
+                  <li>Adobe XD</li>
+                  <li>Design Prototype</li>
+                </ul>
+              </footer>
+            </div>
+          </li>
+          <li>
+            <div class="project-inner">
+              <header>
+                <div class="project-top">
+                  <div class="folder">
+                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder">
+                      <title>Folder</title>
+                      <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                  </div>
+                  <div class="project-links">
+                    <a href="https://medium.com/stories-from-upstatement/building-a-headless-mobile-app-cms-from-scratch-bab2d17744d9" aria-label="External Link" class="external" target="_blank" rel="noopener noreferrer">
+                      <svg xmlns="http://www.w3.org/2000/svg" role="img" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+                        <title>External Link</title>
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <h3 class="project-title">
+                  <a href="https://medium.com/stories-from-upstatement/building-a-headless-mobile-app-cms-from-scratch-bab2d17744d9" target="_blank" rel="noopener noreferrer">Branding for Products</a>
+                </h3>
+                <div class="project-description">
+                  <p>
+                    I know how to do Brnding for products like visiting card and broture logo hording.
+                  </p>
+                </div>
+              </header>
+              <footer>
+                <ul class="project-tech-list">
+                  <li>Hording</li>
+                  <li>Visiting Card</li>
+                  <li>Logos</li>
+                  <li>Ads</li>
+                </ul>
+              </footer>
+            </div>
+          </li>
+          <li>
+            <div class="project-inner">
+              <header>
+                <div class="project-top">
+                  <div class="folder">
+                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder">
+                      <title>Folder</title>
+                      <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                  </div>
+                  <div class="project-links">
+                    <a href="https://github.com/bchiang7/octoprofile" aria-label="GitHub Link" target="_blank" rel="noopener noreferrer">
+                      <svg xmlns="http://www.w3.org/2000/svg" role="img" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+                        <title>GitHub</title>
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                      </svg>
+                    </a>
+                    <a href="https://octoprofile.now.sh" aria-label="External Link" class="external" target="_blank" rel="noopener noreferrer">
+                      <svg xmlns="http://www.w3.org/2000/svg" role="img" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+                        <title>External Link</title>
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <h3 class="project-title">
+                  <a href="https://octoprofile.now.sh" target="_blank" rel="noopener noreferrer">Photoshot</a>
+                </h3>
+                <div class="project-description">
+                  <p>
+                    I have experience in photoshop template design and anytype of editing in photoshop like marriage photography.
+                  </p>
+                </div>
+              </header>
+              <footer>
+                <ul class="project-tech-list">
+                  <li>Marriage photoshoot</li>
+                  <li>Ads photoshoot</li>
+                  <li>Modeling Photoshoot</li>
+                </ul>
+              </footer>
+            </div>
+          </li>
+          <li>
+            <div class="project-inner">
+              <header>
+                <div class="project-top">
+                  <div class="folder">
+                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder">
+                      <title>Folder</title>
+                      <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                  </div>
+                  <div class="project-links">
+                    <a href="https://github.com/bchiang7/google-keep-vue-firebase" aria-label="GitHub Link" target="_blank" rel="noopener noreferrer">
+                      <svg xmlns="http://www.w3.org/2000/svg" role="img" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+                        <title>GitHub</title>
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                      </svg>
+                    </a>
+                    <a href="https://keep-vue.netlify.com/" aria-label="External Link" class="external" target="_blank" rel="noopener noreferrer">
+                      <svg xmlns="http://www.w3.org/2000/svg" role="img" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+                        <title>External Link</title>
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <h3 class="project-title">
+                  <a href="https://keep-vue.netlify.com/" target="_blank" rel="noopener noreferrer">AMP Story</a>
+                </h3>
+                <div class="project-description">
+                  <p>A simple Google Keep clone built with Vue and Firebase.</p>
+                </div>
+              </header>
+              <footer>
+                <ul class="project-tech-list">
+                  <li>AMP</li>
+                  <li>google</li>
+                </ul>
+              </footer>
+            </div>
+          </li>
+          <li>
+            <div class="project-inner">
+              <header>
+                <div class="project-top">
+                  <div class="folder">
+                    <svg xmlns="http://www.w3.org/2000/svg" role="img" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder">
+                      <title>Folder</title>
+                      <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                  </div>
+                  <div class="project-links">
+                    <a href="https://tools.applemusic.com/en-us" aria-label="External Link" class="external" target="_blank" rel="noopener noreferrer">
+                      <svg xmlns="http://www.w3.org/2000/svg" role="img" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+                        <title>External Link</title>
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <h3 class="project-title">
+                  <a href="https://tools.applemusic.com/en-us" target="_blank" rel="noopener noreferrer">Graphics in Illustrator</a>
+                </h3>
+                <div class="project-description">
+                  <p>
+                    I know how to create graphics in illustrator, I did manytimes for our company products.
+                  </p>
+                </div>
+              </header>
+              <footer>
+                <ul class="project-tech-list">
+                  <li>Profile Design</li>
+                  <li>XD</li>
+                  <li>Illustrator</li>
+                </ul>
+              </footer>
+            </div>
+          </li>
+        </ul>
+
+        <button class="more-button">Show More</button>
+      </section>
+
+      <section class="contact-me" id="contact">
+        <h2 class="numbered-heading overline">What's Next?</h2>
+        <h2 class="title">Get In Touch</h2>
+        <p>
+          As if I'm not any new Job opportunities, But my inbox is always free.
+                    Whether you any query then you just want to say hi, I'll try my best
+                    to get back to you!
+        </p>
+        <!-- <a class="email-link" href="mailto:anees.office@gmail.com" rel="noopener noreferrer" target="_blank">Want Say
+                Hello</a> -->
+
+        <button id="getNtouch" class="email-link">Want Say Hello</button>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-icons">
+        <ul>
+          <li><a href="https://github.com/muhdanees" aria-label="GitHub" rel="noopener noreferrer" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><title>GitHub</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></li>
+          <li><a href="https://www.instagram.com/muhdanees/" aria-label="Instagram" rel="noopener noreferrer" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><title>Instagram</title><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a></li>
+          <li><a href="https://twitter.com/aneesoffice" aria-label="Twitter" rel="noopener noreferrer" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><title>Twitter</title><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a></li>
+          <li><a href="https://www.linkedin.com/in/mohd-anees/" aria-label="Linkedin" rel="noopener noreferrer" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><title>LinkedIn</title><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a></li>
+          <li><a href="https://codepen.io/muhdanees" aria-label="Codepen" rel="noopener noreferrer" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-codepen"><title>CodePen</title><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon><line x1="12" y1="22" x2="12" y2="15.5"></line><polyline points="22 8.5 12 15.5 2 8.5"></polyline><polyline points="2 15.5 12 8.5 22 15.5"></polyline><line x1="12" y1="2" x2="12" y2="8.5"></line></svg></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-text">
+        <a href="https://www.codeplayer.in/" target="_blank">
+          <div>Copyright © 2022 Designed &amp; Developed by Mohd Anees</div>
+        </a>
+      </div>
+    </footer>
+
+    <div id="popup" class="modal">
+      <button class="cancel">
+        <span></span>
+      </button>
+      <h3>What do you wanna say!!</h3>
+      <p>Write in the below form:</p>
+      <div class="row">
+        <input type="text" placeholder="type your name"/>
+      </div>
+      <div class="row">
+        <input type="text" placeholder="type your mobile number"/>
+      </div>
+      <div class="row">
+        <textarea rows="8">type your query</textarea>
+      </div>
+      <div class="row">
+        <button id="submitQuery" class="">Submit Query</button>
+      </div>
+    </div>
+
+    <script>
+
+
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth'
+          });
+        });
       });
-    }
 
-    var tabButton = [].slice.call(document.querySelectorAll(".tab-list > button"));
 
-    var tabCont = [].slice.call(document.querySelectorAll(".tab-content .tabs"));
+      var hamButton = document.querySelector(".ham-button");
+      var bodyHome = document.querySelector("body");
+      var nav = document.querySelector("nav.nav");
 
-    tabButton.forEach(function (button, index) {
-      button.addEventListener("click", function () {
-        removeClasses(tabButton, "active");
-        removeClasses(tabCont, "open");
-        this.classList.add("active");
-        tabCont[index].classList.add("open");
+      hamButton.addEventListener("click", function () { // nav.classList.toggle("show");
+        nav.classList.toggle("isShow");
+        bodyHome.classList.toggle("over-flow");
+        this.classList.toggle("close");
       });
-    });
 
-    var header = document.querySelector(".header");
-    window.addEventListener("scroll", (event) => {
-      let scroll = this.scrollY;
-      if (scroll >= 30) {
-        header.classList.add("fixed");
-      } else {
-        header.classList.remove("fixed");
+      function removeClasses(els, cls) {
+        els.forEach(function (el) {
+          el.classList.remove(cls);
+        });
       }
-    });
 
+      var tabButton = [].slice.call(document.querySelectorAll(".tab-list > button"));
 
-    var getNtouch = document.getElementById("getNtouch");
-    getNtouch.addEventListener("click", function(){
-      var popupCont = document.getElementById("popup");
-      popupCont.classList.toggle("show");
-      bodyHome.classList.toggle("over-flow");
-    });
+      var tabCont = [].slice.call(document.querySelectorAll(".tab-content .tabs"));
 
-    var cancel = document.querySelector(".cancel");
-    cancel.addEventListener("click", function(){
-      this.parentNode.classList.remove("show");
-      bodyHome.classList.remove("over-flow");
-    });
+      tabButton.forEach(function (button, index) {
+        button.addEventListener("click", function () {
+          removeClasses(tabButton, "active");
+          removeClasses(tabCont, "open");
+          this.classList.add("active");
+          tabCont[index].classList.add("open");
+        });
+      });
 
+      var header = document.querySelector(".header");
+      window.addEventListener("scroll", (event) => {
+        let scroll = this.scrollY;
+        if (scroll >= 30) {
+          header.classList.add("fixed");
+        } else {
+          header.classList.remove("fixed");
+        }
+      });
 
-  </script>
-</body>
+      var getNtouch = document.getElementById("getNtouch");
+      getNtouch.addEventListener("click", function () {
+        var popupCont = document.getElementById("popup");
+        popupCont.classList.toggle("show");
+        bodyHome.classList.toggle("over-flow");
+      });
 
+      var cancel = document.querySelector(".cancel");
+      cancel.addEventListener("click", function () {
+        this.parentNode.classList.remove("show");
+        bodyHome.classList.remove("over-flow");
+      });
+    </script>
+  </body>
 </html>

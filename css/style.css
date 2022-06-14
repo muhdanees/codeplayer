@@ -224,7 +224,7 @@ a {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 9;
+  z-index: 14;
   padding: 15px 30px;
   transform: translateY(0%);
   /* opacity: 0; */
@@ -843,6 +843,7 @@ ul.project-list .project:nth-child(even) .project-image {
   flex-direction: column;
   -webkit-box-align: center;
   align-items: center;
+  max-width: 100%;
 }
 .more-button {
   color: var(--primary);
@@ -879,7 +880,7 @@ a.inline-link {
   padding: 0px;
   margin: 50px 0px 0px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
   gap: 15px;
   position: relative;
 }
@@ -1044,11 +1045,13 @@ svg.feather {
   bottom: 0;
   width: calc(100% - 10%);
   max-height: 480px;
-  border: 1px solid var(--blue);
+  /* border: 1px solid var(--primary); */
+  box-shadow: 0px 0px 40px var(--light-slate);
   padding: 20px;
-  z-index: 10;
+  z-index: 8;
   max-width: 500px;
   border-radius: 10px;
+  background-color: var(--light-navy);
 }
 .modal.show {
   display: block;
@@ -1059,8 +1062,8 @@ button.cancel {
   top: 20px;
   border: none;
   background-color: transparent;
-  width: 30px;
-  height: 30px;
+  width: 29px;
+  height: 29px;
   cursor: pointer;
 }
 button.cancel span {
@@ -1074,7 +1077,7 @@ button.cancel span::before {
   height: 100%;
   content: "";
   position: absolute;
-  background-color: var(--blue);
+  background-color: var(--primary);
   left: 13px;
 }
 button.cancel span::after {
@@ -1082,7 +1085,7 @@ button.cancel span::after {
   height: 2px;
   content: "";
   position: absolute;
-  background-color: var(--blue);
+  background-color: var(--primary);
   top: 13px;
   left: 0;
 }
