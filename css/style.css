@@ -1044,7 +1044,7 @@ svg.feather {
   right: 0;
   bottom: 0;
   width: calc(100% - 10%);
-  max-height: 480px;
+  max-height: 520px;
   /* border: 1px solid var(--primary); */
   box-shadow: 0px 0px 40px var(--light-slate);
   padding: 20px;
@@ -1105,6 +1105,16 @@ button.cancel span::after {
   color: var(--dark-navy);
   padding: 10px;
   border: none;
+}
+.row button[type="submit"] {
+  background-color: var(--dark-navy);
+  color: var(--white);
+  cursor: pointer;
+  border-radius: 4px;
+}
+.row button[type="submit"]:hover {
+  color: var(--dark-navy);
+  background-color: var(--lightest-slate);
 }
 
 /* min width 768 means big device */

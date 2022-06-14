@@ -31,7 +31,7 @@
             <a href="#contact">Contact</a>
           </li>
         </ul>
-        <a class="resume-button" href="/Mohd_Anees-Senior_User_Interface_Developer.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+        <a class="resume-button" href="/MohdAnees-SeniorUserInterfaceDeveloper.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
       </nav>
       <button aria-label="Menu" class="ham-button">
         <div class="ham-box">
@@ -893,24 +893,30 @@
       </div>
     </footer>
 
+
     <div id="popup" class="modal">
       <button class="cancel">
         <span></span>
       </button>
       <h3>What do you wanna say!!</h3>
       <p>Write in the below form:</p>
-      <div class="row">
-        <input type="text" placeholder="type your name"/>
-      </div>
-      <div class="row">
-        <input type="text" placeholder="type your mobile number"/>
-      </div>
-      <div class="row">
-        <textarea rows="8">type your query</textarea>
-      </div>
-      <div class="row">
-        <button id="submitQuery" class="">Submit Query</button>
-      </div>
+      <form class="forms" method="post" name="google-sheet">
+        <div class="row">
+          <input type="text" name="name" id="name" placeholder="type your name"/>
+        </div>
+        <div class="row">
+          <input type="text" name="email" id="email" placeholder="type your email"/>
+        </div>
+        <div class="row">
+          <input type="text" name="mobile" id="mobile" placeholder="type your mobile number"/>
+        </div>
+        <div class="row">
+          <textarea rows="8" name="message" id="message">type your query</textarea>
+        </div>
+        <div class="row">
+          <button id="submitQuery" type="submit" class="">Submit Query</button>
+        </div>
+    </form>
     </div>
 
     <script>
@@ -977,6 +983,43 @@
         this.parentNode.classList.remove("show");
         bodyHome.classList.remove("over-flow");
       });
+
+
+
+
+
+      // form data script start here
+    function validateform(form) {
+      if (form.elements["name"].value == "") {
+        alert("Please enter your full name");
+        return false;
+      }
+      if (form.elements["phone"].value.length < 10) {
+        alert("Mobile No is incorrect.");
+        return false;
+      }
+      if (form.elements["message"].value == "") {
+        alert("Please enter your full message");
+        return false;
+      }
+      form.querySelector(".btn").setAttribute("disabled", true);
+      form.submit();
+    }
+
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbxK0Dm0RnXQXwDyhxU9jEHMcE23EGpnP2w2ujQL1qnlVok508oSO0bcYV9vQr-9oUNV/exec";
+    const form = document.forms["google-sheet"];
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      fetch(scriptURL, { method: "POST", body: new FormData(form) })
+        .then((response) =>
+          alert("Thanks for Contacting us..! We Will Contact You Soon...")
+        )
+        .catch((error) => console.error("Error!", error.message));
+    });
+
+
     </script>
   </body>
 </html>
