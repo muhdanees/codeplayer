@@ -222,6 +222,7 @@ a {
   width: 100%;
   top: 0;
   left: 0;
+  box-shadow: 0 1px 16px 2px var( --light-navy);
 }
 .header.fixed {
   background-color: var(--navy);
