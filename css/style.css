@@ -263,7 +263,7 @@ nav.nav {
   top: 0;
   right: 0;
   padding: 50px 10px;
-  width: min(75vw, 290px);
+  width: min(90vw, 360px);
   height: 100vh;
   outline: 0px;
   background-color: var(--light-navy);
