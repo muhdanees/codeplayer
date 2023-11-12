@@ -217,8 +217,11 @@ a {
   transform: translateY(0%);
   /* opacity: 0; */
   transition: all 0.5s ease-out, opacity 0.5s;
-  position: relative;
+  position: fixed;
   z-index: 1;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 .header.fixed {
   background-color: var(--navy);
@@ -233,7 +236,7 @@ a {
   transition: all 0.5s ease-out, opacity 0.5s;
 }
 header.fixed .ham-button {
-  margin-right: -12px;
+  margin-right: 0px;
 }
 .logo {
   width: 157px;
@@ -390,7 +393,7 @@ a.resume-button {
   color: var(--light-slate);
 }
 main {
-  margin: -125px auto 0;
+  margin: 5px auto 0;
   width: 100%;
   max-width: 1600px;
   min-height: 100vh;
@@ -476,7 +479,7 @@ h3.big-heading {
   transition-timing-function: linear;
   transition-duration: 0.15s;
   transition-property: opacity, filter;
-  margin-right: -20px;
+  margin-right: 0px;
   cursor: pointer;
 }
 .ham-box {
